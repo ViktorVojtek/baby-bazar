@@ -1,21 +1,15 @@
 import Link from 'next/link';
-import { Container, UL, LI } from './styled';
+import { ReactNode } from 'react';
+import { Container, UL } from './styled';
 
-export default function Navigation() {
+interface IProps {
+  children?: ReactNode;
+}
+
+export default function Navigation({ children }: IProps) {
   return (
     <Container>
-      <UL>
-        <LI>
-          <Link href="/">
-            <a>Domov</a>
-          </Link>
-        </LI>
-        <LI>
-          <Link href="/blog">
-            <a>Blog</a>
-          </Link>
-        </LI>
-      </UL>
+      <UL>{children}</UL>
     </Container>
   );
 }

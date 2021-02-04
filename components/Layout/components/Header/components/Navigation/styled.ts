@@ -14,11 +14,3 @@ export const UL = styled.ul`
   display: flex;
   padding: 0;
 `;
-
-export const LI = styled.li`
-  margin-right: 3.125rem;
-
-  &:last-child {
-    margin-right: 0;
-  }
-`;
