@@ -2,7 +2,6 @@ module.exports = {
   root: true,
   plugins: ['@typescript-eslint'],
   extends: [
-    '@react-native-community',
     'airbnb-typescript',
     'plugin:@typescript-eslint/recommended',
     'prettier',
@@ -22,15 +21,8 @@ module.exports = {
     '@typescript-eslint/no-use-before-define': 'off',
     'import/prefer-default-export': 'off',
     'react/prop-types': 'off',
-    'react/react-in-jsx-scope': 'error',
-    'import/extensions': 'off'
+    'react/react-in-jsx-scope': 'off',
+    'jsx-a11y/anchor-is-valid': 'off',
+    'react/jsx-props-no-spreading': 'off'
   },
-  settings: {
-    'import/resolver': {
-      node: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
-        moduleDirectory: ['node_modules', 'src/'],
-      },
-    },
-  },
-};
+}
