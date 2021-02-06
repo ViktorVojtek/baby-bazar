@@ -8,6 +8,10 @@
     "start": "next start"
   },
   "dependencies": {
+    "apollo-server-micro": "^2.19.2",
+    "axios": "^0.21.1",
+    "dotenv": "^8.2.0",
+    "mongoose": "^5.11.15",
     "next": "10.0.6",
     "next-transpile-modules": "4.1.0",
     "react": "17.0.1",
