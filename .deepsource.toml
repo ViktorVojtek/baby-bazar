@@ -1,0 +1,16 @@
+version = 1
+
+[[analyzers]]
+name = "javascript"
+enabled = true
+
+  [analyzers.meta]
+  plugins = ["react"]
+  environment = [
+    "nodejs",
+    "browser",
+    "jest",
+    "mongo"
+  ]
+  style_guide = "airbnb"
+  dialect = "typescript"
