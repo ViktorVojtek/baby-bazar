@@ -7,7 +7,7 @@ const apolloServer = new ApolloServer({ typeDefs, resolvers });
 
 (async function establishDbConnection() {
   await connectToDb();
-})();
+}());
 
 export const config = {
   api: {
